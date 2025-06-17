@@ -1,0 +1,17 @@
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-06-17T10:24:33.804Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-06-17T10:24:39.682Z"}
+{"level":"info","message":"POST /api/lists 201 204 - 15.299 ms","timestamp":"2025-06-17T10:24:54.784Z"}
+{"level":"info","message":"GET /api/lists 200 206 - 1.579 ms","timestamp":"2025-06-17T10:25:07.184Z"}
+{"level":"info","message":"POST /api/lists/list-id-here/items 404 42 - 7.851 ms","timestamp":"2025-06-17T10:26:04.665Z"}
+{"level":"info","message":"GET /api/lists/list-id-here/items 404 42 - 2.438 ms","timestamp":"2025-06-17T10:26:31.962Z"}
+{"level":"info","message":"GET /api/lists/list-id-here/items/item-id-here 404 42 - 3.073 ms","timestamp":"2025-06-17T10:26:36.690Z"}
+{"level":"info","message":"POST /api/lists 201 194 - 2.727 ms","timestamp":"2025-06-17T10:26:47.215Z"}
+{"level":"info","message":"GET /api/lists/list-id-here/items 404 42 - 3.990 ms","timestamp":"2025-06-17T10:26:53.718Z"}
+{"level":"info","message":"GET /api/lists/list-id-here 404 42 - 2.532 ms","timestamp":"2025-06-17T10:27:01.140Z"}
+{"level":"info","message":"POST /api/lists/:listId/items 404 42 - 4.577 ms","timestamp":"2025-06-17T10:27:32.456Z"}
+{"level":"info","message":"POST /api/lists/:listId/items 404 42 - 2.215 ms","timestamp":"2025-06-17T10:28:50.250Z"}
+{"level":"info","message":"POST /api/lists/:listId/items 404 42 - 1.981 ms","timestamp":"2025-06-17T10:28:52.813Z"}
+{"level":"info","message":"POST /api/lists 201 177 - 3.734 ms","timestamp":"2025-06-17T10:31:42.093Z"}
+{"level":"info","message":"GET /api/lists 200 531 - 8.978 ms","timestamp":"2025-06-17T10:31:59.212Z"}
+{"level":"info","message":"GET /api/lists 200 531 - 7.609 ms","timestamp":"2025-06-17T10:37:17.466Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-06-17T10:42:23.153Z"}
