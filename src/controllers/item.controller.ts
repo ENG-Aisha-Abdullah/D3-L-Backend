@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { itemStore } from '../store/item.store';
 import { listStore } from '../store/list.store';
 import { OK, CREATED, BAD_REQUEST, NOT_FOUND } from '../utils/http-status';
-// create item 
+// create item >> seam what we did post at js
 export const createItem = async (req: Request, res: Response): Promise<void> => {
   try {
     const { listId } = req.params;
@@ -15,7 +15,7 @@ export const createItem = async (req: Request, res: Response): Promise<void> => 
       });
       return;
     }
-
+// if not found list show (NOT_FOUND)
     const list = listStore.findById(listId);
     if (!list) {
       res.status(NOT_FOUND).json({
@@ -24,7 +24,7 @@ export const createItem = async (req: Request, res: Response): Promise<void> => 
       });
       return;
     }
-
+// creat item and if not created error return(BAD_REQUEST)
     const item = itemStore.create({ listId, title, description, completed });
     res.status(CREATED).json({
       success: true,
@@ -37,7 +37,7 @@ export const createItem = async (req: Request, res: Response): Promise<void> => 
     });
   }
 };
-
+// search bt listed id
 export const getListItems = async (req: Request, res: Response): Promise<void> => {
   try {
     const { listId } = req.params;
@@ -63,7 +63,7 @@ export const getListItems = async (req: Request, res: Response): Promise<void> =
     });
   }
 };
-
+// search bt id
 export const getItem = async (req: Request, res: Response): Promise<void> => {
   try {
     const { listId, id } = req.params;
@@ -96,7 +96,7 @@ export const getItem = async (req: Request, res: Response): Promise<void> => {
     });
   }
 };
-
+// update 
 export const updateItem = async (req: Request, res: Response): Promise<void> => {
   try {
     const { listId, id } = req.params;
@@ -130,7 +130,7 @@ export const updateItem = async (req: Request, res: Response): Promise<void> => 
     });
   }
 };
-
+// delete
 export const deleteItem = async (req: Request, res: Response): Promise<void> => {
   try {
     const { listId, id } = req.params;
